@@ -15,10 +15,24 @@
 
 #include <array>
 
-constexpr int NOMBRES_LANCES{10};
+constexpr int NOMBRE_LANCES{10};
 constexpr int NOMBRE_FACES{6};
 
-int 
+int jet_de();
+
+void lances_de(std::array<int, NOMBRE_LANCES>& p_lances);
+
+void calcul_frequences(
+    std::array<int, NOMBRE_LANCES>& p_lances,
+    std::array<int, NOMBRE_FACES>& p_frequences
+);
+
+float calculer_moyenne(std::array<int, NOMBRE_FACES>& p_frequences);
+
+void afficher_lances(std::array<int, NOMBRE_LANCES>& p_lances);
+void afficher_frequences(std::array<int, NOMBRE_FACES>& p_frequences);
+
+
 
 #endif /* FONCTIONS_H */
 
